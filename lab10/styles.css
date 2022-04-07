@@ -22,7 +22,7 @@ nav {background-color: #FFFFFF;
         margin-top: 10px;
         margin-bottom: 10px;
     }
-    span {
+    nav span {
         display: none;
     }
 }
