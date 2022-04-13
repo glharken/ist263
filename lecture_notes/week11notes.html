@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 11 Notes</title>
+    <style>
+        /*
+        1. HTML link to anchor to our content area
+        2. Put an ID attribute into the place you want the anchor to go
+        3. Hide and show skip to content
+        4. Style the skip to content link
+        */
+        #skip {
+            position: absolute; /* absolute = take it out of the page flow and use a left tag to set the position */
+            left: -999px;
+            background-color: orange;
+            padding: 5px;
+        }
+        #skip:focus {
+            left: 10px; /* Brings the item back into focus when it is selected (tab pressed) */
+        }
+        .welcome {
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class='welcome'>Hello World</div>
+    <nav>
+        <a href='#content' id='skip'>Skip to Content</a>
+        <a href='twitter.com'tabindex=4>Twitter</a>
+        <a href='index.html' tabindex=1>Home</a>
+        <a href='skills.html' tabindex=2>Skillls</a>
+        <a href='contact.html' tabindex=3>Contact</a>
+    </nav>
+
+    <main>
+        <img src='image.jpg' alt=''>
+        <h1>Accessibility</h1>
+            <h2>Semantic Tags</h2>
+                <h3>Aside Tag</h3>
+                <h3>Nav Tag</h3>
+                <h3>Footer Tag</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore, vero accusantium libero doloribus nesciunt ipsam eum. Qui neque ducimus libero eos quam dolorum consectetur architecto inventore necessitatibus odio, ullam et.</p>
+            <h2>Heading Tags in Hierarchy</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa libero, suscipit voluptatibus temporibus veritatis veniam, exercitationem fugit aut in vitae repudiandae praesentium distinctio perspiciatis tempora? Nisi necessitatibus odio voluptate corporis!</p>
+    </main>
+
+    <footer id='content'>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus sed, alias eum, officiis placeat animi cupiditate dolor minima ad minus, perspiciatis velit delectus commodi magnam hic est ducimus accusantium quaerat.</p>
+    </footer>
+
+</body>
+</html>
