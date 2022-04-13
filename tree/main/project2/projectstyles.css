@@ -1,0 +1,118 @@
+body {
+    background-color: darkgrey;
+    color: white;
+}
+
+.nav {
+    display: flex;
+    justify-content:space-between;
+    background-color: black;
+}
+
+a {color:white;}
+
+a:hover {color:mediumblue;}
+
+.navlinks {
+    display: flex;
+    padding-top: 40px;
+    padding-right: 40px;
+}
+
+.navlinks a {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 250%;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.navlogo {
+    height: 150px;
+    width: auto;
+    padding-left: 20px;
+}
+
+.section1 {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 50px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.slogan {
+    padding-left: 50px;
+}
+
+.slogan h1{
+    font-size: 600%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+}
+
+.staffphoto {
+    display: flex;
+    justify-content: space-around;
+    padding-left: 40px;
+    padding-right: 50px;
+}
+
+hr {
+    border-color: mediumblue;
+    width: 1675px;
+}
+
+main {
+    padding: 20px;
+    padding-left: 75px;
+    padding-right: 75px;
+    font-size: 150%;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+footer div {
+    display: flex;
+    justify-content:space-evenly;
+}
+
+.instagram {
+    height: 50px;
+}
+
+.tiktok {
+    height: 50px;
+}
+
+.twitter {
+    height: 50px;
+}
+
+main h3 {
+    color: mediumblue;
+}
+
+.left {
+    display: flex;
+}
+
+.right {
+    display: flex;
+}
+
+h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.clips {
+    display: flex;
+}
+
+.episodes {
+    display: flex;
+}
