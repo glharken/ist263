@@ -1,14 +1,14 @@
 body {color: #FFFFFF;
     background-color: #41597C;}
 
-    a {color: #b3c3c9;}
+    a {color: #5b6061;}
 
 h2 {color: #FFFFFF;
     font-style: italic;}
 
     nav, nav a {color: #41597C;}
 
-nav a:hover {color: #b3c3c9;}
+nav a:hover {color: #5b6061;}
 
 nav {background-color: #FFFFFF;
     padding: 1em;
@@ -85,7 +85,7 @@ h1 {color: #FFFFFF;}
 
 .otherskills {
     background-color: #FFFFFF;
-    color: #6382ad;
+    color: #41597C;
     border-radius: 1em;
     padding-left: 20px;
     padding-top: 1px;
@@ -93,7 +93,7 @@ h1 {color: #FFFFFF;}
 }
 
 .otherskills h2 {
-    color: #6382ad;
+    color: #41597C;
 }
 
 .flexbox2{
