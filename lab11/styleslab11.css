@@ -110,7 +110,7 @@ h1 {color: #FFFFFF;}
 #skip {
     position: absolute; /* absolute = take it out of the page flow and use a left tag to set the position */
     left: -999px;
-    background-color: orange;
+    background-color: white;
     padding: 5px;
 }
 #skip:focus {
