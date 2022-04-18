@@ -1,0 +1,118 @@
+body {color: #FFFFFF;
+    background-color: #6382ad;}
+
+    a {color: #b3c3c9;}
+
+h2 {color: #FFFFFF;
+    font-style: italic;}
+
+    nav, nav a {color: #6382ad;}
+
+nav a:hover {color: #b3c3c9;}
+
+nav {background-color: #FFFFFF;
+    padding: 1em;
+    margin-bottom: 1em;
+    /*width: max-content;*/}
+
+@media only screen and (max-width: 700px) {
+    nav a {
+        display:block ;
+        max-width: 100%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    nav span {
+        display: none;
+    }
+}
+
+h1 {color: #FFFFFF;}
+
+.footerslogan {text-align: right;
+                margin: 0px;}
+
+                .copyright {float: left;}
+
+.clear {clear: both;}
+
+.col4 h2 {color:#6382ad;}
+
+.row1 {display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #FFFFFF;
+        color: #6382ad;
+        border-radius: 1em;}
+    .col1 {flex: 1; order:1}
+    .col2 {flex: 1; order:2}
+    .col5 {flex: 1; order:3}
+    .col1, .col2, .col5 {margin: 20px;}
+    .col2 a {font-weight: bold;}
+
+.row2 {display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #FFFFFF;
+        color: #6382ad;
+        border-radius: 1em;
+        flex-wrap: wrap;}
+    .col3 {flex: 1; order:2}
+    .col4 {flex: 1; order:1}
+    .col3, .col4 {margin: 20px;}
+
+.skillsh1 {
+    text-align: center;
+}
+
+.skillsp {
+    margin-top: 75px;
+    margin-left: 150px;
+    margin-right: 525px;
+}
+
+.icons img {
+    width: auto;
+    height: 100px;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 80px;
+    text-align: center;
+}
+
+.otherskills {
+    background-color: #FFFFFF;
+    color: #6382ad;
+    border-radius: 1em;
+    padding-left: 20px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+.otherskills h2 {
+    color: #6382ad;
+}
+
+.flexbox2{
+    display: flex;
+    margin-top: 50px;
+    margin-left: 75px;
+    margin-right: 75px;
+}
+    .icons {flex: 3}
+    .sideskills {flex:1}
+
+.banner {max-width: 100%;}
+
+#skip {
+    position: absolute; /* absolute = take it out of the page flow and use a left tag to set the position */
+    left: -999px;
+    background-color: orange;
+    padding: 5px;
+}
+#skip:focus {
+    left: 10px; /* Brings the item back into focus when it is selected (tab pressed) */
+}

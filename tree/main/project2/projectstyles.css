@@ -1,5 +1,5 @@
 body {
-    background-color: darkgrey;
+    background-color: #595959;
     color: white;
 }
 
@@ -93,7 +93,7 @@ footer div {
     height: 50px;
 }
 
-main h3 {
+main h2 {
     color: mediumblue;
 }
 
