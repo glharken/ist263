@@ -3,6 +3,11 @@ body {color: #FFFFFF;
 
     a {color: #5b6061;}
 
+.bio p {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
 h2 {color: #FFFFFF;
     font-style: italic;}
 
