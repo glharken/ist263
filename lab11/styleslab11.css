@@ -1,12 +1,12 @@
 body {color: #FFFFFF;
-    background-color: #6382ad;}
+    background-color: #41597C;}
 
     a {color: #b3c3c9;}
 
 h2 {color: #FFFFFF;
     font-style: italic;}
 
-    nav, nav a {color: #6382ad;}
+    nav, nav a {color: #41597C;}
 
 nav a:hover {color: #b3c3c9;}
 
@@ -36,13 +36,13 @@ h1 {color: #FFFFFF;}
 
 .clear {clear: both;}
 
-.col4 h2 {color:#6382ad;}
+.col4 h2 {color:#41597C;}
 
 .row1 {display: flex;
         justify-content: center;
         align-items: center;
         background-color: #FFFFFF;
-        color: #6382ad;
+        color: #41597C;
         border-radius: 1em;}
     .col1 {flex: 1; order:1}
     .col2 {flex: 1; order:2}
@@ -54,7 +54,7 @@ h1 {color: #FFFFFF;}
         justify-content: center;
         align-items: center;
         background-color: #FFFFFF;
-        color: #6382ad;
+        color: #41597C;
         border-radius: 1em;
         flex-wrap: wrap;}
     .col3 {flex: 1; order:2}
