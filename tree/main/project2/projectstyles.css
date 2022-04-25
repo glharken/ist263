@@ -10,6 +10,30 @@ body {
     background-color: black;
 }
 
+@media only screen and (max-width: 785px) {
+    .navlinks {
+        flex-direction:column;
+    }
+    .navlinks {
+        padding-bottom: 20px;
+    }
+    .navlogodiv {
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+}
+
+@media only screen and (max-width: 1600px) {
+    .section1 {flex-direction: column;
+    padding-top: 0px;}
+    .staffphoto {display: flex;
+        flex-direction: row;
+    }
+    .lfsbphoto {
+        margin: auto;
+    }
+}   
+
 a {color:white;}
 
 a:hover {color:mediumblue;}
@@ -35,22 +59,22 @@ a:hover {color:mediumblue;}
     height: 150px;
     width: auto;
     padding-left: 20px;
-    max-width: 100%;
+    /* max-width: 100%; */
 }
 
 .homeimage {
-    width: 600px;
+    max-width: 100%;
     height: auto;
-}
+} 
 
 
 .section1 {
     display: flex;
     justify-content:space-around;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     padding-left: 50px;
     padding-right: 50px;
     padding-top: 50px;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .slogan {
@@ -74,11 +98,14 @@ a:hover {color:mediumblue;}
 
 hr {
     border-color: mediumblue;
-    width: 1675px;
+    margin-top: 20px; 
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 main {
-    padding: 20px;
+    padding-bottom: 20px;
+    padding-top: 10px;
     padding-left: 75px;
     padding-right: 75px;
     font-size: 150%;
@@ -88,6 +115,7 @@ main {
 footer {
     padding-top: 50px;
     padding-bottom: 50px;
+    background-color: mediumblue;
 }
 
 footer div {
@@ -133,12 +161,7 @@ h1 {
 
 /*
 
-@media only screen and (max-width: 1600px) {
-    .section1 {flex-direction: column;}
-    .staffphoto {display: flex;
-        flex-direction: row;
-        justify-content:center;}
-} 
+ 
 
 @media only screen and (min-width: 1600px) {
     .section1 {flex-direction: row;}
