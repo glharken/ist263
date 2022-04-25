@@ -36,10 +36,10 @@ body {
 
 a {color:white;}
 
-a:hover {color:mediumblue;}
+a:hover {color: #FF7B00;}
 
 .watch, .ourstaff, .home {
-    color: mediumblue;
+    color: #FF7B00;
 }
 
 .navlinks {
