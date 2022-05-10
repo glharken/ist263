@@ -82,17 +82,27 @@ body {
     }
 
     #gretchen, #aine {
-        padding-right: 50px;
-        padding-left: 50px;
         display: flex;
         justify-content: center;
         flex-direction: column;
         margin: auto;
     }
+    #gretchen {
+        padding-left: 50px;
+    }
+
+    #aine {
+        padding-right: 50px;
+    }
 
     #gretchen img, #aine img {
         padding-right: 0px;
         padding-left: 0px;
+    }
+
+    #aboutcontent {
+        padding-left: 25px;
+        padding-right: 25px;
     }
 }
 
