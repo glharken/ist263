@@ -156,7 +156,7 @@ a:hover {color: #FF7B00;}
 
 
 hr {
-    border-color: mediumblue;
+    border-color: #0000cd;
     margin-top: 20px;
 }
 
@@ -341,7 +341,7 @@ iframe {
     color: #fff;
 }
 .flip-card-back {
-    background-color: #FF7B00;
+    background-color: #0000cd;
     color: #fff;
     transform: rotateY(180deg);
 }    
