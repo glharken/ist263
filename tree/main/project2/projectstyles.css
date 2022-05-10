@@ -10,29 +10,101 @@ body {
     background-color: black;
 }
 
+.orange_ham {
+    height: 100px;
+    width: auto;
+    display: none;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 25px;
+}
+
+.navlinks {
+    background-color: black;
+    display: flex;
+    padding-top: 40px;
+    padding-right: 20px;
+}
+
+.navlinks2 a {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 250%;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 10px;
+    background-color: black;
+}
+
+.navlinks2 {
+    display: none;
+    flex-direction: column;
+    text-align: right;
+}
+
+@media only screen and (max-width: 1600px) {
+    #section1 {
+        flex-direction: column;
+    }
+    #slogan {
+        padding-left: 30px;
+    }
+    #staffphoto {
+        padding-bottom: 45px;
+    }
+}
+
 @media only screen and (max-width: 785px) {
     .navlinks {
-        flex-direction:column;
+        display: none;
     }
-    .navlinks {
-        padding-bottom: 20px;
+
+    .navlinks2 a {
+        display: block;
     }
+
     .navlogodiv {
         margin-top: auto;
         margin-bottom: auto;
     }
-}
 
-@media only screen and (max-width: 1600px) {
-    .section1 {flex-direction: column;
-    padding-top: 0px;}
-    .staffphoto {display: flex;
+    .nav {
+        display: flex;
         flex-direction: row;
+        justify-content: space-between;
     }
-    .lfsbphoto {
+
+    .orange_ham {
+        display: block;
+    }
+
+    #staff, #eps{
+        flex-direction: column;
+    }
+
+    #gretchen, #aine {
+        padding-right: 50px;
+        padding-left: 50px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
         margin: auto;
     }
-}   
+
+    #gretchen img, #aine img {
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+}
+
+.section1 {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 0px;
+}
 
 a {color:white;}
 
@@ -40,12 +112,6 @@ a:hover {color: #FF7B00;}
 
 .watch, .ourstaff, .home {
     color: #FF7B00;
-}
-
-.navlinks {
-    display: flex;
-    padding-top: 40px;
-    padding-right: 40px;
 }
 
 .navlinks a {
@@ -64,18 +130,8 @@ a:hover {color: #FF7B00;}
 
 .homeimage {
     max-width: 100%;
-    height: auto;
+    margin: auto;
 } 
-
-
-.section1 {
-    display: flex;
-    justify-content:space-around;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 50px;
-}
 
 .slogan {
     padding-left: 50px;
@@ -89,12 +145,15 @@ a:hover {color: #FF7B00;}
 
 .staffphoto {
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    flex-direction: row;
     justify-content: center;
     padding-left: 40px;
     padding-right: 50px;
 }
+
+.lfsbphoto {flex:3}
+.phototext {flex: 1;}
+
 
 hr {
     border-color: mediumblue;
@@ -140,8 +199,8 @@ footer div {
     height: 50px;
 }
 
-main h2 {
-    color: mediumblue;
+h2 {
+    color: white;
 }
 
 .left {
@@ -156,42 +215,60 @@ h1 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
-.clips {
+.clips, .episodes {
     display: flex;
+    justify-content: space-between;
 }
 
-.clips div, .episodes div {
-    margin-right: 40px;
+.clips p, .episodes p {
+    text-align: justify;
+    width: 600px;
 }
 
-.clips div p, .episodes div p {
-    margin: auto;
-    font-size: 0.6em;
-    padding-left: 2px;
-    padding-right: 2px;
+#more {
+    text-align: center;
 }
 
-.episodes {
-    display: flex;
+.episodes_title {
+    margin-top: 20px;
 }
 
 iframe {
-    height: 275px;
-    width: 475px;
-}
-
-.whitearrow {
-    display: block;
-    margin-top: 80px;
+    height: 350px;
+    width: 600px;
 }
 
 .videocontent {
-    padding-bottom: 75px;
+    padding-bottom: 30px;
     padding-top: 10px;
     padding-left: 75px;
     padding-right: 75px;
     font-size: 150%;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+@media only screen and (max-width: 2000px) {
+    .clips, .episodes {
+        flex-direction: column;
+    }
+
+    .clip, .episodes div {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 30px;
+    }
+
+    iframe {
+        height: auto;
+        width: auto;
+    }
+
+    .clip p, .episodes div p {
+        margin-left: 30px;
+        width: 1500px;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
 }
 
 .aboutus {
@@ -287,17 +364,3 @@ iframe {
 #aine {
     padding-left: 50px;
 }
-
-
-/*
-
- 
-
-@media only screen and (min-width: 1600px) {
-    .section1 {flex-direction: row;}
-    .staffphoto {display: flex; 
-        flex-direction: column;
-        justify-content:center;}
-}
-
-*/

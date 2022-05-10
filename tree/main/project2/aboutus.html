@@ -6,6 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="projectstyles.css">
     <title>Our Staff</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../project2/images/favicon_package_v0.16/favicon-32x32.png">
+    <script>
+        function toggleNav () {
+            if (document.getElementById('navlinks3').style.getPropertyValue('display') == 'block') {
+                document.getElementById('navlinks3').style.display = 'none';
+            } else {
+            document.getElementById('navlinks3').style.display = 'block';}
+        }
+    </script>
 </head>
 <body>
     <nav>
@@ -13,18 +22,24 @@
             <div clas="navlogodiv">
                 <img src="images/logo_transparent.png" alt='LFSB Logo' class="navlogo">
             </div>
+            <img src="../project2/images/orange_hamburger.png" class="orange_ham" id="orange_ham" onclick="toggleNav();">
             <div class="navlinks">
                 <a href="homepage.html">Home</a>
                 <a href="aboutus.html" class="ourstaff">Our Staff</a>
                 <a href="videocontent.html">Watch</a>
             </div>
         </div>
+        <div class="navlinks2" id="navlinks3">
+            <a href="homepage.html">Home</a>
+            <a href="aboutus.html" class="ourstaff">Our Staff</a>
+            <a href="videocontent.html">Watch</a>
+        </div>
     </nav>
     <main class='aboutus'>
         <h1>
             Meet Our Staff
         </h1>
-        <div class="eps">
+        <div class="eps" id="eps">
             <div id="gretchen">
                 <div class="flip-card-container">
                     <div class="flip-card">
@@ -68,7 +83,7 @@
                 </p>
             </div>
         </div> 
-        <div class="staff"> 
+        <div class="staff" id="staff"> 
             <div id="lucas">
                 <img src="../project2/images/lucas.png" alt='Lucas Portnoy'>
                 <p>
@@ -80,7 +95,7 @@
                 </p>
             </div>
             <div id="luke">
-                <img src="../project2/images/luke.png" alt='Luke Maddren'>
+                <img src="../project2/images/luke_new.png" alt='Luke Maddren'>
                 <p>
                     <strong>
                     Luke Maddren

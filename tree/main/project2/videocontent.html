@@ -6,6 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="projectstyles.css">
     <title>Watch!</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../project2/images/favicon_package_v0.16/favicon-32x32.png">
+    <script>
+        function toggleNav () {
+            if (document.getElementById('navlinks3').style.getPropertyValue('display') == 'block') {
+                document.getElementById('navlinks3').style.display = 'none';
+            } else {
+            document.getElementById('navlinks3').style.display = 'block';}
+        }
+    </script>
 </head>
 <body>
     <nav>
@@ -13,11 +22,17 @@
             <div clas="navlogodiv">
                 <img src="images/logo_transparent.png" alt='LFSB Logo' class="navlogo">
             </div>
+            <img src="../project2/images/orange_hamburger.png" class="orange_ham" id="orange_ham" onclick="toggleNav();">
             <div class="navlinks">
                 <a href="homepage.html">Home</a>
                 <a href="aboutus.html">Our Staff</a>
                 <a href="videocontent.html" class="watch">Watch</a>
             </div>
+        </div>
+        <div class="navlinks2" id="navlinks3">
+            <a href="homepage.html">Home</a>
+            <a href="aboutus.html">Our Staff</a>
+            <a href="videocontent.html" class="watch">Watch</a>
         </div>
     </nav>
     <main class="videocontent">
@@ -25,31 +40,26 @@
             Clips
         </h1>
         <div class="clips">
-            <div>
-                <iframe src="https://www.youtube.com/embed/GlP6E3raN34" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="clip">
+                <iframe src="https://www.youtube.com/embed/djcCbOR_0ow" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <p>
-                New scents like Hypocrite, Gaslight, and Veronica will have your woman guessing....why she stayed with you this long.
+                Sometimes we f*ck up. And most of the time it’s while the cameras are rolling. Check out our blooper reel from season 11! 
                 </p>
             </div>
-            <div>
+            <div class="clip">
+                <iframe src="https://www.youtube.com/embed/ym4wmofMDk4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p>
+                Is there a graduating senior in your life? Consider taking them to the Syracuse Senior Living Center!
+                </p>
+            </div>
+            <div class="clip">
                 <iframe src="https://www.youtube.com/embed/fPXqP2N-DSc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <p>
                 Our host Kathryn wants to rebrand so she’s hired a new agent. Javier knows the best way to improve Kathryn’s image.
                 </p>
             </div>
-            <div>
-                <iframe src="https://www.youtube.com/embed/MsMPNO1AGh8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <p>
-                It’s the news, but funny. It’s that simple.
-                </p>
-            </div>
-            <div class="whitearrow">
-                <a href='https://youtube.com/playlist?list=PLy2bFXxtGVXPd8bAFxoYdBTXqlCMnM1tP' target="_blank">
-                    <img src="../project2/images/white_arrow.png" alt='white arrow'>
-                </a>
-            </div>
         </div>
-        <h1>
+        <h1 class="episodes_title">
             Episodes
         </h1>
         <div class="episodes">
@@ -71,11 +81,12 @@
                 We're back for yet another season! Here's the first full episode of Season 11 of Live From Studio B. Here's to more laughs and more comedy coming your way. 
                 </p>
             </div>
-            <div class="whitearrow">
-                <a href='https://youtube.com/playlist?list=PLy2bFXxtGVXPd8bAFxoYdBTXqlCMnM1tP' target="_blank">
-                    <img src="../project2/images/white_arrow.png" alt='white arrow'>
-                </a>
-            </div>
+        </div>
+        <div id="more">
+            <a href="https://www.youtube.com/playlist?list=PLy2bFXxtGVXPd8bAFxoYdBTXqlCMnM1tP"
+            target="_blank">
+            <img src="../project2/images/more_button.png">
+            </a>
         </div>
     </main>
     <footer>

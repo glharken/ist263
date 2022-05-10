@@ -7,6 +7,14 @@
     <link rel="stylesheet" href="projectstyles.css">
     <title>Live from Studio B!</title>
     <link rel="shortcut icon" type="image/x-icon" href="../project2/images/favicon_package_v0.16/favicon-32x32.png">
+    <script>
+        function toggleNav () {
+            if (document.getElementById('navlinks2').style.getPropertyValue('display') == 'block') {
+                document.getElementById('navlinks2').style.display = 'none';
+            } else {
+            document.getElementById('navlinks2').style.display = 'block';}
+        }
+    </script>
 </head>
 <body>
     <nav>
@@ -14,34 +22,39 @@
             <div class="navlogodiv">
                 <img src="images/logo_transparent.png" alt='LFSB Logo' class="navlogo">
             </div>
-            <div class="navlinks">
+            <img src="../project2/images/orange_hamburger.png" class="orange_ham" id="orange_ham" onclick="toggleNav();">
+            <div class="navlinks" id="navlinks">
                 <a href="homepage.html" class="home">Home</a>
                 <a href="aboutus.html">Our Staff</a>
                 <a href="videocontent.html">Watch</a>
             </div>
         </div>
+        <div class="navlinks2" id="navlinks2">
+            <a href="homepage.html" class="home">Home</a>
+            <a href="aboutus.html">Our Staff</a>
+            <a href="videocontent.html">Watch</a>
+        </div>
     </nav>
-    <div class="section1">
-        <div class="slogan">
+    <div class="section1" id="section1">
+        <div class="slogan" id="slogan">
             <h1 class="lfsbslogan">
                 Late-night comedy just got a little more orange.
             </h1>
         </div>
-        <div class="staffphoto">
-            <div class="lfsbphoto">
-                <img src="images/staff_resized.png" alt='LFSB Staff' class="homeimage">
-            </div>
-            <div class="phototext">
-                <h2>
-                    LFSB is a fully student-operated comedy show broadcasted live out of the Dick Clark studios in the S.I. Newhouse School of Public Communications at Syracuse University. 
-                </h2>
-            </div>
+        <div class="staffphoto" id="staffphoto">
+            <img src="images/staff_fixed.png" alt='LFSB Staff' class="homeimage">
         </div>
     </div>
     <hr class="homepagedivider">
     <main>
+        <h2>
+            About
+        </h2>
         <p>
-            LFSB was created in the spring of 2017 by Syracuse alumni, Josh Feinblatt and Lizzie Michael. It is loosely modeled off the style of the famous NBC show, Saturday Night Live. Although the show began with a mere twenty person staff, it has grown tremendously over the past five years and is now run by nearly 100 Syracuse students!
+            Live from Studio B! (LFSB) is a fully student-operated comedy show broadcasted live out of the Dick Clark studios in the S.I. Newhouse School of Public Communications at Syracuse University. 
+        </p>
+        <p>
+            LFSB was created in the spring of 2017 by Syracuse alumni, Josh Feinblatt and Lizzie Michael. It is loosely modeled off the famous NBC show, Saturday Night Live. Although the show began with a mere twenty person staff, it has grown tremendously over the past five years and is now run by nearly 100 Syracuse students!
         </p>
         <p>
             Our show offers a variety of content ranging from monologue jokes, interviews, pre-taped segments, and more recently, comedic music videos!
