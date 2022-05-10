@@ -268,6 +268,21 @@ iframe {
         width: 1500px;
         margin-top: auto;
         margin-bottom: auto;
+        text-align: left;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    
+    .clip, .episodes div {
+        flex-direction: column;
+    }
+
+    .clip p, .episodes div p {
+        padding-top: 10px;
+        margin-left: 0px;
+        max-width: 100%;
+        text-align: left;
     }
 }
 
