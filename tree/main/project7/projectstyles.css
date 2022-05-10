@@ -1,0 +1,391 @@
+body {
+    margin: 0px;
+    background-color: #595959;
+    color: white;
+}
+
+.nav {
+    display: flex;
+    justify-content:space-between;
+    background-color: black;
+}
+
+.orange_ham {
+    height: 100px;
+    width: auto;
+    display: none;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 25px;
+}
+
+.navlinks {
+    background-color: black;
+    display: flex;
+    padding-top: 40px;
+    padding-right: 20px;
+}
+
+.navlinks2 a {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 250%;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 10px;
+    background-color: black;
+}
+
+.navlinks2 {
+    display: none;
+    flex-direction: column;
+    text-align: right;
+}
+
+@media only screen and (max-width: 1600px) {
+    #section1 {
+        flex-direction: column;
+    }
+    #slogan {
+        padding-left: 30px;
+    }
+    #staffphoto {
+        padding-bottom: 45px;
+    }
+}
+
+@media only screen and (max-width: 785px) {
+    .navlinks {
+        display: none;
+    }
+
+    .navlinks2 a {
+        display: block;
+    }
+
+    .navlogodiv {
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .orange_ham {
+        display: block;
+    }
+
+    #staff, #eps{
+        flex-direction: column;
+    }
+
+    #gretchen, #aine {
+        padding-right: 50px;
+        padding-left: 50px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    #gretchen img, #aine img {
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+}
+
+.section1 {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 0px;
+}
+
+a {color:white;}
+
+a:hover {color: #FF7B00;}
+
+.watch, .ourstaff, .home {
+    color: #FF7B00;
+}
+
+.navlinks a {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 250%;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.navlogo {
+    height: 150px;
+    width: auto;
+    padding-left: 20px;
+    /* max-width: 100%; */
+}
+
+.homeimage {
+    max-width: 100%;
+    padding-top: 25px;
+    margin: auto;
+} 
+
+.slogan {
+    padding-left: 50px;
+}
+
+.slogan h1{
+    font-size: 600%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+}
+
+.staffphoto {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-left: 40px;
+    padding-right: 50px;
+}
+
+.lfsbphoto {flex:3}
+.phototext {flex: 1;}
+
+
+hr {
+    border-color: #0000cd;
+    margin-top: 20px;
+}
+
+.homepagedivider {
+    border-color: mediumblue;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+main {
+    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-left: 75px;
+    padding-right: 75px;
+    font-size: 150%;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+footer {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-color: mediumblue;
+}
+
+footer div {
+    display: flex;
+    justify-content:space-evenly;
+}
+
+.instagram {
+    height: 50px;
+}
+
+.tiktok {
+    height: 50px;
+}
+
+.twitter {
+    height: 50px;
+}
+
+h2 {
+    color: white;
+}
+
+.left {
+    display: flex;
+}
+
+.right {
+    display: flex;
+}
+
+h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.clips, .episodes {
+    display: flex;
+    justify-content: space-between;
+}
+
+.clips p, .episodes p {
+    text-align: justify;
+    width: 475px;
+}
+
+#more {
+    text-align: center;
+}
+
+.episodes_title {
+    margin-top: 20px;
+}
+
+iframe {
+    height: 275px;
+    width: 475px;
+}
+
+.videocontent {
+    padding-bottom: 30px;
+    padding-top: 10px;
+    padding-left: 75px;
+    padding-right: 75px;
+    font-size: 150%;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+@media only screen and (max-width: 1600px) {
+    .clips, .episodes {
+        flex-direction: column;
+    }
+
+    .clip, .episodes div {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 30px;
+    }
+
+    iframe {
+        height: auto;
+        width: auto;
+    }
+
+    .clip p, .episodes div p {
+        margin-left: 30px;
+        width: 1500px;
+        margin-top: auto;
+        margin-bottom: auto;
+        text-align: left;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    
+    .clip, .episodes div {
+        flex-direction: column;
+    }
+
+    .clip p, .episodes div p {
+        padding-top: 10px;
+        margin-left: 0px;
+        max-width: 100%;
+        text-align: left;
+    }
+}
+
+.aboutus {
+    padding-bottom: 50px;
+    padding-top: 10px;
+    padding-left: 75px;
+    padding-right: 75px;
+    font-size: 150%;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.staff {
+    display:flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.staff p {
+    font-size: .5em;
+}
+
+.eps {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.eps img {
+    padding-left: 100px;
+    padding-right: 100px;
+    max-width: 100%;
+}
+
+.staff img {
+    max-width: 100%;
+    padding-top: 25px;
+}
+
+.flip-card-container {
+    width: 286px;
+    height: 400px;
+    perspective: 1000px;
+}
+.flip-card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+.flip-card-container:hover .flip-card {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* in case the website it opened in Safari */
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flip-card-front {
+    background-color: #333;
+    color: #fff;
+}
+.flip-card-back {
+    background-color: #0000cd;
+    color: #fff;
+    transform: rotateY(180deg);
+}    
+.flip-card-front img {
+    max-width: 100%;
+    height: 100%;
+}
+.flip-card-back p {
+    text-align: center;
+    margin: 1rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+#gretchen {
+    padding-right: 50px;
+}
+
+#aine {
+    padding-left: 50px;
+}
+
+.skip {
+    position: absolute; /* absolute = take it out of the page flow and use a left tag to set the position */
+    left: -999px;
+    background-color: #0000cd;
+    padding: 5px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.skip:focus {
+    left: 10px;
+}
